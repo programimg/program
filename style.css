@@ -80,6 +80,7 @@ a{
     font-weight: 800;
     color: #fff;
     letter-spacing: .2px;
+    gap: 8px;
     border: 1px solid rgba(255,255,255,.18);
     background:
       radial-gradient(120% 160% at 10% 0%, rgba(168,85,247,.55), transparent 60%),
@@ -93,6 +94,14 @@ a{
     backdrop-filter: blur(10px);
     transition: transform .16s ease, filter .16s ease, box-shadow .16s ease, border-color .16s ease;
     user-select: none;
+}
+
+.btn-icon{
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    opacity: .92;
+    filter: drop-shadow(0 1px 0 rgba(0,0,0,.25));
 }
 
 .btn-gradient:hover{
