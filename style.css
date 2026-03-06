@@ -81,16 +81,18 @@ a{
     color: #fff;
     letter-spacing: .2px;
     gap: 8px;
-    border: 1px solid rgba(255,255,255,.18);
+    border: 1px solid rgba(255,255,255,.22);
     background:
       radial-gradient(120% 160% at 10% 0%, rgba(168,85,247,.55), transparent 60%),
       radial-gradient(140% 160% at 95% 25%, rgba(59,130,246,.55), transparent 58%),
-      linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.04));
+      linear-gradient(180deg, rgba(255,255,255,.20), rgba(255,255,255,.04));
     box-shadow:
-      0 8px 22px rgba(0,0,0,.45),
+      0 14px 0 rgba(0,0,0,.28),
+      0 18px 28px rgba(0,0,0,.55),
       0 0 0 1px rgba(0,0,0,.35) inset,
-      0 0 0 1px rgba(255,255,255,.06),
-      inset 0 1px 0 rgba(255,255,255,.16);
+      0 0 0 1px rgba(255,255,255,.08),
+      inset 0 1px 0 rgba(255,255,255,.22),
+      inset 0 -10px 18px rgba(0,0,0,.28);
     backdrop-filter: blur(10px);
     transition: transform .16s ease, filter .16s ease, box-shadow .16s ease, border-color .16s ease;
     user-select: none;
@@ -107,18 +109,27 @@ a{
 .btn-gradient:hover{
     transform: translateY(-1px);
     filter: brightness(1.08) saturate(1.05);
-    border-color: rgba(255,255,255,.28);
+    border-color: rgba(255,255,255,.34);
     box-shadow:
-      0 14px 40px rgba(0,0,0,.55),
-      0 0 18px rgba(168,85,247,.22),
+      0 16px 0 rgba(0,0,0,.26),
+      0 22px 36px rgba(0,0,0,.60),
+      0 0 22px rgba(168,85,247,.28),
       0 0 0 1px rgba(0,0,0,.35) inset,
       0 0 0 1px rgba(255,255,255,.08),
-      inset 0 1px 0 rgba(255,255,255,.18);
+      inset 0 1px 0 rgba(255,255,255,.24),
+      inset 0 -10px 18px rgba(0,0,0,.26);
 }
 
 .btn-gradient:active{
-    transform: translateY(0px) scale(.99);
-    filter: brightness(1.02);
+    transform: translateY(7px) scale(.99);
+    filter: brightness(1.02) saturate(1.02);
+    box-shadow:
+      0 7px 0 rgba(0,0,0,.28),
+      0 10px 18px rgba(0,0,0,.55),
+      0 0 0 1px rgba(0,0,0,.35) inset,
+      0 0 0 1px rgba(255,255,255,.07),
+      inset 0 1px 0 rgba(255,255,255,.18),
+      inset 0 -10px 18px rgba(0,0,0,.30);
 }
 
 .btn-gradient-alt{
