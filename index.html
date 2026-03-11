@@ -1,74 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Make a Wish</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #0f172a;
-        color: white;
-        overflow-x: hidden;
-      }
-      .font-serif {
-        font-family: 'Playfair Display', serif;
-      }
-      .font-script {
-        font-family: 'Sacramento', cursive;
-      }
-      
-      /* Flame Animation */
-      @keyframes flicker {
-        0%, 100% { transform: scale(1); opacity: 1; }
-        25% { transform: scale(1.1) rotate(-2deg); opacity: 0.9; }
-        50% { transform: scale(0.9) rotate(2deg); opacity: 0.8; }
-        75% { transform: scale(1.05) rotate(-1deg); opacity: 0.95; }
-      }
-      
-      .flame-anim {
-        animation: flicker 0.1s infinite alternate;
-        transform-origin: center bottom;
-      }
-
-      /* Float Animation */
-      @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-20px); }
-        100% { transform: translateY(0px); }
-      }
-      .animate-float {
-        animation: float 6s ease-in-out infinite;
-      }
-      
-      /* Smoke Animation */
-      @keyframes smoke {
-        0% { transform: translateY(0) scale(1); opacity: 0.8; }
-        100% { transform: translateY(-50px) scale(2); opacity: 0; }
-      }
-      .animate-smoke {
-        animation: smoke 1.5s ease-out forwards;
-      }
-    </style>
-
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
-  }
-}
-</script>
-  <script type="module" crossorigin src="/birthdaywishes/assets/index-2bAoHCWP.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All anime</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-  <body>
-    <div id="root"></div>
+
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand-block">
+                <a class="btn-gradient" href="https://cinehd.cc/providers" id="cinehd" target="_blank" rel="noopener noreferrer">
+                    <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 4h16v16H4z" fill="none" />
+                        <path d="M10 8l6 4-6 4V8z" fill="currentColor" />
+                    </svg>
+                    Cinehd
+                </a>
+                <p class="tagline">This OTT platform for anime and movies</p>
+            </div>
+            <button class="hamburger" id="hamburger-menu" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <a class="btn-gradient btn-gradient-alt" href="https://toonstream.dad/home/" target="_blank" rel="noopener noreferrer">
+                    <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 7h16v10H4z" fill="none" />
+                        <path d="M6 6h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm2 3h2v2H8V9zm0 4h2v2H8v-2zm6-4h2v2h-2V9zm0 4h2v2h-2v-2z" fill="currentColor" />
+                    </svg>
+                    Toon Stream
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <h1>Hello, These Are My Top 4 Anime Recommendations</h1>
+            <p class="subtitle">Click a poster to open the streaming page.</p>
+        </section>
+
+        <section class="grid" aria-label="Top 4 anime">
+            <article class="card">
+                <a class="card-link" href="https://toonstream.dad/home/series/demon-slayer-kimetsu-no-yaiba/" target="_blank" rel="noopener noreferrer">
+                    <h2>1. Demon Slayer</h2>
+                    <div class="poster">
+                        <img src="Demon.png" alt="Demon Slayer poster">
+                    </div>
+                    <p>Demon Slayer: Kimetsu no Yaiba is an emotional action anime about family, friendship, and courage. Perfect for action and adventure fans. ⚔️
+                       <strong>Characters:</strong>
+                       <ul>
+                           <li>Zenitsu Agatsuma</li>
+                           <li>Inosuke Hashibira</li>
+                           <li>Kyojuro Rengoku</li>
+                       </ul>
+                    </p>
+                </a>
+            </article>
+
+            <article class="card">
+                <a class="card-link" href="https://toonstream.dad/home/series/jujutsu-kaisen/" target="_blank" rel="noopener noreferrer">
+                    <h2>2. Jujutsu Kaisen</h2>
+                    <div class="poster">
+                        <img src="jujutsu.png" alt="Jujutsu Kaisen poster">
+                    </div>
+                    <p>Jujutsu Kaisen is a thrilling mix of action, emotion, and supernatural elements. Perfect for action and fantasy fans. 🔥
+                       <strong>Characters:</strong>
+                       <ul>
+                           <li>Yuji Itadori</li>
+                           <li>Megumi Fushiguro</li>
+                           <li>Nobara Kugisaki</li>
+                           <li>Satoru Gojo</li>
+                       </ul>
+                    </p>
+                </a>
+            </article>
+
+            <article class="card">
+                <a class="card-link" href="https://toonstream.dad/home/series/solo-leveling/" target="_blank" rel="noopener noreferrer">
+                    <h2>3. Solo Leveling</h2>
+                    <div class="poster">
+                        <img src="solo.png" alt="Solo Leveling poster">
+                    </div>
+                    <p>Solo Leveling shows the journey of a weak hero becoming the strongest. Amazing animation by A-1 Pictures with impressive fight scenes. ⚔️🔥</p>
+                </a>
+            </article>
+
+            <article class="card">
+                <a class="card-link" href="https://toonstream.dad/home/series/wind-breaker/" target="_blank" rel="noopener noreferrer">
+                    <h2>4. Wind Breaker</h2>
+                    <div class="poster">
+                        <img src="wind-Breaker.png" alt="Wind Breaker poster">
+                    </div>
+                    <p>Wind Breaker focuses on street fights, friendship, and protecting others. Strong high school fighters use their power to protect their town. 🔥
+                       <strong>Characters:</strong>
+                       <ul>
+                           <li>Haruka Sakura</li>
+                           <li>Hajime Umemiya</li>
+                           <li>Hayato Suo</li>
+                           <li>Akihiko Nirei</li>
+                       </ul>
+                    </p>
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
