@@ -1,28 +1,35 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.getElementById('hamburger-menu');
-    const navMenu = document.getElementById('nav-menu');
+document.addEventListener("DOMContentLoaded", () => {
 
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
+const hamburger = document.getElementById("hamburger-menu");
+const navMenu = document.getElementById("nav-menu");
 
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-        const isClickInsideHamburger = hamburger.contains(event.target);
-        const isClickInsideMenu = navMenu.contains(event.target);
-        
-        if (!isClickInsideHamburger && !isClickInsideMenu && navMenu.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        }
-    });
+hamburger.addEventListener("click", () => {
 
-    // Close menu when pressing Escape key
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape' && navMenu.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        }
-    });
+hamburger.classList.toggle("active");
+navMenu.classList.toggle("active");
+
+});
+
+document.addEventListener("click", (e) => {
+
+if(!hamburger.contains(e.target) && !navMenu.contains(e.target)){
+
+hamburger.classList.remove("active");
+navMenu.classList.remove("active");
+
+}
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+if(e.key==="Escape"){
+
+hamburger.classList.remove("active");
+navMenu.classList.remove("active");
+
+}
+
+});
+
 });

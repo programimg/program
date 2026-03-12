@@ -1,118 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All anime</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anime Recommendations</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="brand-block">
-                <h1 class="site-title">Anime Recommendations</h1>
-                <p class="tagline">Top 4 Anime Picks</p>
-            </div>
-            <nav class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li><a class="nav-link btn-gradient" href="https://cinehd.cc/providers" target="_blank" rel="noopener noreferrer">
-                        <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M4 4h16v16H4z" fill="none" />
-                            <path d="M10 8l6 4-6 4V8z" fill="currentColor" />
-                        </svg>
-                        Cinehd
-                    </a></li>
-                    <li><a class="nav-link btn-gradient btn-gradient-alt" href="https://toonstream.dad/home/" target="_blank" rel="noopener noreferrer">
-                        <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M4 7h16v10H4z" fill="none" />
-                            <path d="M6 6h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm2 3h2v2H8V9zm0 4h2v2H8v-2zm6-4h2v2h-2V9zm0 4h2v2h-2v-2z" fill="currentColor" />
-                        </svg>
-                        Toon Stream
-                    </a></li>
-                    <li><a class="nav-link" href="#demon-slayer">Demon Slayer</a></li>
-                    <li><a class="nav-link" href="#jujutsu-kaisen">Jujutsu Kaisen</a></li>
-                    <li><a class="nav-link" href="#solo-leveling">Solo Leveling</a></li>
-                    <li><a class="nav-link" href="#wind-breaker">Wind Breaker</a></li>
-                </ul>
-            </nav>
-            <button class="hamburger" id="hamburger-menu" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-    <main class="container">
-        <section class="hero">
-            <h1>Hello, These Are My Top 4 Anime Recommendations</h1>
-            <p class="subtitle">Click a poster to open the streaming page.</p>
-        </section>
+<header class="site-header">
 
-        <section class="grid" aria-label="Top 4 anime">
-            <article class="card" id="demon-slayer">
-                <a href="https://toonstream.dad/home/series/demon-slayer-kimetsu-no-yaiba/" target="_blank" rel="noopener noreferrer" class="card-link"></a>
-                <h2>1. Demon Slayer</h2>
-                <div class="poster">
-                    <img src="Demon.png" alt="Demon Slayer poster">
-                </div>
-                <p>Demon Slayer: Kimetsu no Yaiba is an emotional action anime about family, friendship, and courage. Perfect for action and adventure fans. ⚔️
-                       <strong>Characters:</strong>
-                       <ul>
-                           <li>Zenitsu Agatsuma</li>
-                           <li>Inosuke Hashibira</li>
-                           <li>Kyojuro Rengoku</li>
-                       </ul>
-                    </p>
-            </article>
+<div class="container header-inner">
 
-            <article class="card" id="jujutsu-kaisen">
-                <a href="https://toonstream.dad/home/series/jujutsu-kaisen/" target="_blank" rel="noopener noreferrer" class="card-link"></a>
-                <h2>2. Jujutsu Kaisen</h2>
-                <div class="poster">
-                    <img src="jujutsu.png" alt="Jujutsu Kaisen poster">
-                </div>
-                <p>Jujutsu Kaisen is a thrilling mix of action, emotion, and supernatural elements. Perfect for action and fantasy fans. 🔥
-                       <strong>Characters:</strong>
-                       <ul>
-                           <li>Yuji Itadori</li>
-                           <li>Megumi Fushiguro</li>
-                           <li>Nobara Kugisaki</li>
-                           <li>Satoru Gojo</li>
-                       </ul>
-                    </p>
-            </article>
+<div class="brand-block">
+<h1 class="site-title">Anime Recommendations</h1>
+<p class="tagline">Top 4 Anime Picks</p>
+</div>
 
-            <article class="card" id="solo-leveling">
-                <a href="https://toonstream.dad/home/series/solo-leveling/" target="_blank" rel="noopener noreferrer" class="card-link"></a>
-                <h2>3. Solo Leveling</h2>
-                <div class="poster">
-                    <img src="solo.png" alt="Solo Leveling poster">
-                </div>
-                <p>Solo Leveling shows journey of a weak hero becoming the strongest. Amazing animation by A-1 Pictures with impressive fight scenes. ⚔️🔥</p>
-            </article>
+<nav class="nav-menu" id="nav-menu">
 
-            <article class="card" id="wind-breaker">
-                <a href="https://toonstream.dad/home/series/wind-breaker/" target="_blank" rel="noopener noreferrer" class="card-link"></a>
-                <h2>4. Wind Breaker</h2>
-                <div class="poster">
-                    <img src="wind-Breaker.png" alt="Wind Breaker poster">
-                </div>
-                <p>Wind Breaker focuses on street fights, friendship, and protecting others. Strong high school fighters use their power to protect their town. 🔥
-                       <strong>Characters:</strong>
-                       <ul>
-                           <li>Haruka Sakura</li>
-                           <li>Hajime Umemiya</li>
-                           <li>Hayato Suo</li>
-                           <li>Akihiko Nirei</li>
-                       </ul>
-                    </p>
-            </article>
-        </section>
-    </main>
+<ul class="nav-list">
 
-    <script src="main.js"></script>
+<li>
+<a class="nav-link btn-gradient" href="https://cinehd.cc/providers" target="_blank">
+Cinehd
+</a>
+</li>
+
+<li>
+<a class="nav-link btn-gradient btn-gradient-alt" href="https://toonstream.dad/home/" target="_blank">
+Toon Stream
+</a>
+</li>
+
+<li><a class="nav-link" href="#demon-slayer">Demon Slayer</a></li>
+<li><a class="nav-link" href="#jujutsu-kaisen">Jujutsu Kaisen</a></li>
+<li><a class="nav-link" href="#solo-leveling">Solo Leveling</a></li>
+<li><a class="nav-link" href="#wind-breaker">Wind Breaker</a></li>
+
+</ul>
+
+</nav>
+
+<button class="hamburger" id="hamburger-menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+</div>
+
+</header>
+
+<main class="container">
+
+<section class="hero">
+
+<h1>Hello, These Are My Top 4 Anime Recommendations</h1>
+
+<p class="subtitle">
+Click a poster to open the streaming page.
+</p>
+
+</section>
+
+
+<section class="grid">
+
+<!-- Demon Slayer -->
+
+<article class="card" id="demon-slayer">
+
+<a class="card-link"
+href="https://toonstream.dad/home/series/demon-slayer-kimetsu-no-yaiba/"
+target="_blank"></a>
+
+<h2>1. Demon Slayer</h2>
+
+<div class="poster">
+<img src="Demon.png" alt="Demon Slayer poster">
+</div>
+
+<p>
+Demon Slayer: Kimetsu no Yaiba is an emotional action anime about family,
+friendship, and courage. Perfect for action and adventure fans. ⚔️
+<strong>Characters:</strong>
+</p>
+
+<ul>
+<li>Zenitsu Agatsuma</li>
+<li>Inosuke Hashibira</li>
+<li>Kyojuro Rengoku</li>
+</ul>
+
+</article>
+
+
+<!-- Jujutsu -->
+
+<article class="card" id="jujutsu-kaisen">
+
+<a class="card-link"
+href="https://toonstream.dad/home/series/jujutsu-kaisen/"
+target="_blank"></a>
+
+<h2>2. Jujutsu Kaisen</h2>
+
+<div class="poster">
+<img src="jujutsu.png" alt="Jujutsu Kaisen poster">
+</div>
+
+<p>
+Jujutsu Kaisen is a thrilling mix of action, emotion, and supernatural
+elements. Perfect for action and fantasy fans. 🔥
+<strong>Characters:</strong>
+</p>
+
+<ul>
+<li>Yuji Itadori</li>
+<li>Megumi Fushiguro</li>
+<li>Nobara Kugisaki</li>
+<li>Satoru Gojo</li>
+</ul>
+
+</article>
+
+
+<!-- Solo -->
+
+<article class="card" id="solo-leveling">
+
+<a class="card-link"
+href="https://toonstream.dad/home/series/solo-leveling/"
+target="_blank"></a>
+
+<h2>3. Solo Leveling</h2>
+
+<div class="poster">
+<img src="solo.png" alt="Solo Leveling poster">
+</div>
+
+<p>
+Solo Leveling shows journey of a weak hero becoming the strongest.
+Amazing animation by A-1 Pictures with impressive fight scenes. ⚔️🔥
+</p>
+
+</article>
+
+
+<!-- Wind Breaker -->
+
+<article class="card" id="wind-breaker">
+
+<a class="card-link"
+href="https://toonstream.dad/home/series/wind-breaker/"
+target="_blank"></a>
+
+<h2>4. Wind Breaker</h2>
+
+<div class="poster">
+<img src="wind-Breaker.png" alt="Wind Breaker poster">
+</div>
+
+<p>
+Wind Breaker focuses on street fights, friendship, and protecting others.
+Strong high school fighters use their power to protect their town. 🔥
+<strong>Characters:</strong>
+</p>
+
+<ul>
+<li>Haruka Sakura</li>
+<li>Hajime Umemiya</li>
+<li>Hayato Suo</li>
+<li>Akihiko Nirei</li>
+</ul>
+
+</article>
+
+</section>
+
+</main>
+
+<script src="main.js"></script>
+
 </body>
 </html>
