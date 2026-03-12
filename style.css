@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -37,14 +41,24 @@ a{
     align-items: center;
     justify-content: space-between;
     padding: 14px 0;
-    gap: 12px;
-    flex-wrap: wrap;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+.site-title{
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
 }
 
 .brand-block{
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
+    min-width: 0;
+    flex-shrink: 0;
 }
 
 .tagline{
@@ -107,19 +121,27 @@ a{
         position: fixed;
         top: 0;
         right: -100%;
-        width: 100%;
+        width: 80%;
+        max-width: 300px;
         height: 100vh;
         background: rgba(11,11,16,0.98);
         backdrop-filter: blur(10px);
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: 0.3s;
+        transition: right 0.3s ease;
         z-index: 1000;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.3);
     }
 
     .nav-menu.active{
         right: 0;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
     }
 }
 
@@ -129,7 +151,42 @@ a{
     }
 
     .nav-menu{
-        display: block;
+        position: static;
+        background: transparent;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .nav-list{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .nav-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-link{
+        color: #e8e8ea;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 12px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .nav-link:hover{
+        color: #fff;
+        background: rgba(255,255,255,0.1);
     }
 }
 
@@ -242,6 +299,7 @@ h1{
 }
 
 .card{
+    position: relative;
     border: 1px solid rgba(255,255,255,.10);
     background: rgba(255,255,255,.04);
     border-radius: 18px;
@@ -256,10 +314,40 @@ h1{
     background: rgba(255,255,255,.055);
 }
 
+.card h2,
+.card .poster,
+.card p,
+.card ul,
+.card strong{
+    position: relative;
+    z-index: 0;
+}
+
 .card-link{
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.card-link:hover{
     color: inherit;
     text-decoration: none;
+}
+
+.card-link h2{
+    color: #ffffff;
+}
+
+.card-link p{
+    color: rgba(232,232,234,.78);
+}
+
+.card-link ul{
+    color: rgba(232,232,234,.78);
 }
 
 .card-actions{
@@ -337,27 +425,4 @@ p{
 
 #cinehd{
     color: #ffffff;
-}
-
-.card-link{
-    color: inherit;
-    text-decoration: none;
-    display: block;
-}
-
-.card-link:hover{
-    color: inherit;
-    text-decoration: none;
-}
-
-.card-link h2{
-    color: #ffffff;
-}
-
-.card-link p{
-    color: rgba(232,232,234,.78);
-}
-
-.card-link ul{
-    color: rgba(232,232,234,.78);
 }
